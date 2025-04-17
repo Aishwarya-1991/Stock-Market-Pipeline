@@ -12,6 +12,7 @@ Testing: Includes unit tests for DAG integrity.
 Example DAG: Features a generate_random DAG to demonstrate Airflow TaskFlow API.
 
 **Project Structure**
+```
 Stock-Market-Pipeline/
 ├── .astro/                        # Astronomer CLI configuration
 │   ├── config.yaml
@@ -57,7 +58,7 @@ Stock-Market-Pipeline/
 ├── plugins/                       # Airflow plugins (empty)
 ├── requirements.txt               # Python package dependencies
 └── README.md                      # Project documentation
-
+```
 **Prerequisites**
 
 Docker and Docker Compose: To run Airflow and additional services.
@@ -69,20 +70,20 @@ Homebrew (macOS): Optional, for installing tools like tree.
 **Installation**
 
 Clone the Repository:
-git clone https://github.com/Aishwarya-1991/Stock-Market-Pipeline.git
-cd Stock-Market-Pipeline
+```git clone https://github.com/Aishwarya-1991/Stock-Market-Pipeline.git```
+```cd Stock-Market-Pipeline```
 
 
 **Install the Astronomer CLI:**
 Follow the instructions at Astronomer CLI Documentation.
 On macOS, you can use Homebrew:
-brew install astro
+```brew install astro```
 
 
 **Install Dependencies:**
 The requirements.txt specifies:
-minio==7.1.14
-apache-airflow-providers-docker>=3.0.0,<4.0.0
+```minio==7.1.14```
+```apache-airflow-providers-docker>=3.0.0,<4.0.0```
 
 These are installed in the Astro Runtime environment when you start the project.
 **Set Up Docker:**
