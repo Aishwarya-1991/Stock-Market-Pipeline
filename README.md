@@ -2,22 +2,16 @@
 Overview**
 The Stock Market Pipeline is an Apache Airflow-based data pipeline designed to fetch, process, and store stock market data for analysis. It retrieves stock prices from an API, processes the data using Apache Spark, stores it in MinIO (S3-compatible storage), and loads it into a PostgreSQL database. The project integrates Metabase for data visualization and includes a random number generator DAG for demonstration. Built with Astronomer CLI and Astro Runtime, it provides a robust environment for orchestrating data workflows.
 Features:
-**Acknowledgement: **
+
+**Acknowledgement:**
 This project is based on Marc Lamberti’s Udemy course, “The Ultimate Hands-On Course to Master Apache Airflow” (https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/?couponCode=ST14MT150425G3).
 
-Data Ingestion: Fetches stock market data from a configured API.
-
-Data Processing: Processes stock data using Python and Apache Spark for formatting and transformation.
-
-Storage: Stores raw and processed data in MinIO and PostgreSQL.
-
-Visualization: Uses Metabase for querying and visualizing stock market data.
-
-Automation: Schedules daily data updates via Airflow DAGs.
-
-Testing: Includes unit tests for DAG integrity.
-
-Example DAG: Features a generate_random DAG to demonstrate Airflow TaskFlow API.
+**Data Ingestion**: Fetches stock market data from a configured API.
+**Data Processing:** Processes stock data using Python and Apache Spark for formatting and transformation.
+**Storage:** Stores raw and processed data in MinIO and PostgreSQL.
+**Visualization:** Uses Metabase for querying and visualizing stock market data.
+**Automation:** Schedules daily data updates via Airflow DAGs.
+**Testing**: Includes unit tests for DAG integrity.
 
 
 **Project Structure**
@@ -202,37 +196,17 @@ Location: tests/dags/test_dag_example.py
 
 Purpose: Unit tests for DAG integrity.
 
-Run tests with:
-astro dev pytest
+**Run tests with:**
+```astro dev pytest```
 
 
 
-Additional Services
+**Additional Services**
 
 MinIO: S3-compatible storage.
 Apache Spark: Data processing for format_prices.
 Metabase: Data visualization.
 Docker Proxy: Enables DockerOperator communication.
 
-Contributing
 
-Fork the repository.
-Create a feature branch (git checkout -b feature-branch).
-Commit changes (git commit -m "Add feature").
-Push to the branch (git push origin feature-branch).
-Open a pull request.
-
-Troubleshooting
-
-Port Conflicts: Check ports 8080, 5432, 9000, 9001, 3000, 8081, 8082. Modify docker-compose.override.yml if needed.
-API Issues: Verify stock_api connection in airflow_settings.yaml.
-Spark Issues: Check Spark logs in /spark/logs.
-MinIO Issues: Ensure the minio connection is correct and the bucket exists.
-Tree Command: Install with brew install tree on macOS if missing.
-
-See Astronomer CLI Troubleshooting.
-License
-MIT License (assumed; add LICENSE file if needed).
-Contact
-Open issues on GitHub or contact Aishwarya-1991.
 
