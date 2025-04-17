@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Stock Market Pipeline is an Apache Airflow-based data pipeline designed to fetch, process, and store stock market data for analysis. It retrieves stock prices from an API, processes the data using Apache Spark, stores it in MinIO (S3-compatible storage), and loads it into a PostgreSQL database. The pipeline integrates Metabase for data visualization and includes a random number generator DAG for demonstration. Built with Astronomer CLI and Astro Runtime, it provides a robust environment for orchestrating data workflows.
+The Stock Market Pipeline is an Apache Airflow-based data pipeline designed to fetch, process, and store stock market data for analysis. It retrieves stock prices from an API, processes the data using Apache Spark, stores it in MinIO (S3-compatible storage), and loads it into a PostgreSQL database. The pipeline integrates Metabase for data visualization. Built with Astronomer CLI and Astro Runtime, it provides a robust environment for orchestrating data workflows.
 
 ### Features
 - **Data Ingestion**: Fetches stock market data from a configured API.
@@ -166,9 +166,6 @@ Stock-Market-Pipeline/
   - `get_formatted_csv`: Retrieves formatted CSV from MinIO.
   - `load_to_dw`: Loads data into Postgres.
 - **Helper Script**: `include/helpers/minio.py` facilitates MinIO interactions.
-
-### 2. `generate_random`
-- **Purpose**: Generates a random number and checks if it’s odd or even for demonstration.
 
 ## Dependencies
 
