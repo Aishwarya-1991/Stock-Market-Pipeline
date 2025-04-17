@@ -65,9 +65,13 @@ Stock-Market-Pipeline/
 **Prerequisites**
 
 Docker and Docker Compose: To run Airflow and additional services.
+
 Astronomer CLI: For managing the Airflow project (astro command).
+
 Python 3.8+: For local development or dependency installation.
+
 Git: To clone or manage the repository.
+
 Homebrew (macOS): Optional, for installing tools like tree.
 
 **Installation**
