@@ -89,10 +89,12 @@ On macOS, you can use Homebrew:
 
 **Install Dependencies:**
 The requirements.txt specifies:
-```minio==7.1.14```
-```apache-airflow-providers-docker>=3.0.0,<4.0.0```
+
+```minio==7.1.14
+apache-airflow-providers-docker>=3.0.0,<4.0.0```
 
 These are installed in the Astro Runtime environment when you start the project.
+
 **Set Up Docker:**
 Ensure Docker is running. The project uses Docker Compose to manage Airflow, MinIO, Spark, and Metabase.
 
@@ -132,6 +134,7 @@ airflow:
 
 
 **Start the Project:**
+
 ```astro dev start```
 
 This launches Docker containers for:
